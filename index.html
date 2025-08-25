@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta property="og:image" content="YOUR_IMAGE_URL">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beijing 101 x NEX Promo</title>
+  <!-- Open Graph Meta Tags for Social Media Preview -->
+  <meta property="og:image" content="https://i.ibb.co/w3TdvNW/101-First-Trial68-Pillar-Whatsapp-Preview.jpg">
   <meta property="og:title" content="Beijing 101 x NEX Promo [Hair Growth Trial @ $68]!">
   <meta property="og:description" content="Sign up now for the first trial!">
 </head>
 <body>
   <img src="https://i.ibb.co/w3TdvNW/101-First-Trial68-Pillar-Whatsapp-Preview.jpg" style="max-width:100%">
+  
+  <!-- User-friendly redirect message -->
+  <p style="text-align: center; font-family: Arial;">Redirecting to WhatsApp in <span id="countdown">3</span> seconds...<br>
+  <a href="https://wa.me/6596405730?text=Sign%20me%20up%20for%20Beijing%20101%20x%20NEX%20Promo%20%5BHair%20Growth%20Trial%20%40%20%2468%5D%21">Click here if you are not redirected.</a>
+  </p>
+  
   <script>
-    // Auto-redirect to WhatsApp after 2 seconds
+    // Update the countdown timer
+    var seconds = 3;
+    var countdownElement = document.getElementById('countdown');
+    var countdownInterval = setInterval(function() {
+      seconds--;
+      countdownElement.textContent = seconds;
+      if (seconds <= 0) {
+        clearInterval(countdownInterval);
+      }
+    }, 1000);
+
+    // Auto-redirect to WhatsApp after 3 seconds
     setTimeout(function() {
       window.location.href = "https://wa.me/6596405730?text=Sign%20me%20up%20for%20Beijing%20101%20x%20NEX%20Promo%20%5BHair%20Growth%20Trial%20%40%20%2468%5D%21";
     }, 3000);
